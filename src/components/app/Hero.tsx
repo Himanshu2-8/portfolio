@@ -1,5 +1,6 @@
 import { FaGithub } from "react-icons/fa";
 import {GitHubCalendar} from "react-github-calendar";
+import { SquigglyText } from "../ui/squiggly-text";
 
 export default function Hero() {
   return (
@@ -13,11 +14,11 @@ export default function Hero() {
       </p>
 
       {/* Main heading */}
-      <h1 className="text-white text-6xl sm:text-7xl lg:text-8xl font-black tracking-tight leading-[0.85]">
+      <SquigglyText className="text-white text-6xl sm:text-7xl lg:text-8xl font-black tracking-tight leading-[0.85]">
         SOFTWARE
         <br />
         <span className="text-white/15">ENGINEER</span>
-      </h1>
+      </SquigglyText>
 
       {/* Description */}
       <p className="mt-8 max-w-2xl text-white/60 text-lg lg:text-xl leading-relaxed font-medium">

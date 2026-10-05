@@ -1,19 +1,19 @@
 import Hero from "./components/app/Hero";
 import SidePanel from "./components/app/SidePanel";
+import Skills from "./components/app/Skills";
 
 export default function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center px-6 py-10 lg:px-10">
-      <div className="w-full max-w-[1100px]">
-        <div className="flex flex-col lg:flex-row gap-8 items-center">
-          <SidePanel />
+    <div className="h-screen overflow-hidden flex flex-col lg:flex-row items-center gap-8 px-6 py-10 lg:px-10 max-w-275 mx-auto">
+      {/* SidePanel stays sticky — never scrolls */}
+      <SidePanel />
 
-          <main className="flex-1 min-w-0">
-            {/* sections */}
-            <Hero />
-          </main>
-        </div>
-      </div>
+      {/* Only this panel scrolls */}
+      <main className="flex-1 min-w-0 overflow-y-auto h-full no-scrollbar">
+        {/* sections */}
+        <Hero />
+        <Skills />
+      </main>
     </div>
   );
 }
