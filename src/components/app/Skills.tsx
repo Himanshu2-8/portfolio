@@ -2,7 +2,7 @@ import { FaJava } from "react-icons/fa"
 import {
   SiTypescript, SiJavascript, SiPython, SiReact, SiNextdotjs, SiTailwindcss,
   SiSpringboot, SiNodedotjs, SiFastapi, SiPostgresql, SiRedis, SiApachekafka,
-  SiDocker, SiGit,
+  SiDocker, SiGit, SiElectron, SiMongodb, SiLangchain
 } from "react-icons/si"
 import { SquigglyText } from "../ui/squiggly-text"
 
@@ -10,29 +10,33 @@ const skillGroups = [
   {
     title: "Languages",
     skills: [
-      { name: "Java", icon: FaJava, color: "#f89820" },
       { name: "TypeScript", icon: SiTypescript, color: "#3178c6" },
       { name: "JavaScript", icon: SiJavascript, color: "#f7df1e" },
+      { name: "Java", icon: FaJava, color: "#f89820" },
       { name: "Python", icon: SiPython, color: "#3776ab" },
     ],
   },
   {
-    title: "Frontend",
+    title: "Frameworks & Libraries",
     skills: [
-      { name: "React", icon: SiReact, color: "#61dafb" },
+      { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
+      { name: "Electron", icon: SiElectron, color: "#47848f" },
       { name: "Next.js", icon: SiNextdotjs, color: "#ffffff" },
+      { name: "React", icon: SiReact, color: "#61dafb" },
       { name: "Tailwind CSS", icon: SiTailwindcss, color: "#38bdf8" },
-    ],
+      { name: "Spring Boot", icon: SiSpringboot, color: "#6db33f" },
+      { name: "FastAPI", icon: SiFastapi, color: "#009688" },
+      { name: "LangChain", icon: SiLangchain, color: "#1a73e8" },
+      
+    ]
   },
   {
-    title: "Backend & Data",
+    title: "Databases & Messaging",
     skills: [
-      { name: "Spring Boot", icon: SiSpringboot, color: "#6db33f" },
-      { name: "Node.js", icon: SiNodedotjs, color: "#5fa04e" },
-      { name: "FastAPI", icon: SiFastapi, color: "#009688" },
-      { name: "PostgreSQL", icon: SiPostgresql, color: "#4169e1" },
+      { name: "PostgreSQL", icon: SiPostgresql, color: "#336791" },
+      { name: "MongoDB", icon: SiMongodb, color: "#47a248" },
       { name: "Redis", icon: SiRedis, color: "#dc382d" },
-      { name: "Kafka", icon: SiApachekafka, color: "#ffffff" },
+      { name: "Apache Kafka", icon: SiApachekafka, color: "#ffffff" },
     ],
   },
   {
@@ -58,7 +62,7 @@ export default function Skills() {
         <h3 className="mb-3 text-sm font-medium uppercase tracking-wide text-neutral-500">
           {group.title}
         </h3>
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap gap-3 mb-2">
           {group.skills.map(({ name, icon: Icon, color }) => (
             <div
               key={name}
