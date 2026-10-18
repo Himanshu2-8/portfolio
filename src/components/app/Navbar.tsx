@@ -14,6 +14,10 @@ const navBarLeftItems = [
     link: "#skills",
   },
   {
+    name: "Achievements",
+    link: "#achievements",
+  },
+  {
     name: "Contact",
     link: "#contact",
   },
