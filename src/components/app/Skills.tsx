@@ -51,8 +51,8 @@ const skillGroups = [
 
 export default function Skills() {
   return (<section
-    id="home"
-    className="min-h-[calc(100vh-4rem)] rounded-3xl p-2 lg:p-6 flex flex-col justify-center"
+    id="skills"
+    className="min-h-[calc(100vh-4rem)] scroll-mt-20 rounded-3xl p-2 lg:p-6 flex flex-col justify-center"
   >
     <SquigglyText className="text-white text-6xl sm:text-7xl lg:text-8xl font-black tracking-tight leading-[0.85] pb-10">
       SKILLS
