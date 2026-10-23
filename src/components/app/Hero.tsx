@@ -1,42 +1,39 @@
-import { FaGithub } from "react-icons/fa";
-import {GitHubCalendar} from "react-github-calendar";
-import { SquigglyText } from "../ui/squiggly-text";
+import { FaGithub } from "react-icons/fa"
+import { GitHubCalendar } from "react-github-calendar"
+import { SquigglyText } from "../ui/squiggly-text"
 
 export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-[calc(100%-4.5rem)] scroll-mt-20 rounded-3xl p-4 lg:p-6 flex flex-col justify-center"
+      className="flex min-h-[calc(100%-4.5rem)] scroll-mt-20 flex-col justify-center rounded-3xl p-4 lg:p-6"
     >
       {/* Small label */}
-      <p className="text-accent text-sm font-semibold tracking-[0.2em] uppercase mb-6">
+      <p className="mb-6 text-sm font-semibold tracking-[0.2em] text-accent uppercase">
         Software Developer
       </p>
 
       {/* Main heading */}
-      <SquigglyText className="text-white text-6xl sm:text-7xl lg:text-8xl font-black tracking-tight leading-[0.85]">
+      <SquigglyText className="text-6xl leading-[0.85] font-black tracking-tight text-white sm:text-7xl lg:text-8xl">
         SOFTWARE
         <br />
         <span className="text-white/15">ENGINEER</span>
       </SquigglyText>
 
       {/* Description */}
-      <p className="mt-8 max-w-2xl text-white/60 text-lg lg:text-xl leading-relaxed font-medium">
-        I build modern web applications and backend systems with
-        a focus on clean architecture, real-time experiences, and
-        thoughtful design.
+      <p className="mt-8 max-w-2xl text-lg leading-relaxed font-medium text-white/60 lg:text-xl">
+        I build modern web applications and backend systems with a focus on
+        clean architecture, real-time experiences, and thoughtful design.
       </p>
 
       {/* GitHub */}
       <div className="mt-12 max-w-3xl">
-        <div className="flex items-center gap-3 mb-4">
+        <div className="mb-4 flex items-center gap-3">
           <FaGithub className="text-white/80" size={22} />
-          <span className="text-white/80 font-semibold">
-            GitHub Activity
-          </span>
+          <span className="font-semibold text-white/80">GitHub Activity</span>
         </div>
 
-        <div className="rounded-2xl bg-white/5 border border-white/10 p-5">
+        <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
           <GitHubCalendar
             username="Himanshu2-8"
             colorScheme="dark"
@@ -52,5 +49,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  );
+  )
 }

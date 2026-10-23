@@ -1,4 +1,4 @@
-import { FloatingNav } from "../ui/floating-navbar";
+import { FloatingNav } from "../ui/floating-navbar"
 
 const navBarLeftItems = [
   {
@@ -28,11 +28,14 @@ const navBarLeftItems = [
   {
     name: "E-Mail",
     link: "mailto:himanshupragyan348@gmail.com",
-  }
+  },
 ]
 
 export default function Navbar() {
   return (
-    <FloatingNav navItems={navBarLeftItems} className="bg-transparent rounded-3xl" />
+    <FloatingNav
+      navItems={navBarLeftItems}
+      className="rounded-3xl bg-transparent"
+    />
   )
 }
